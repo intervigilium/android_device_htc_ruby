@@ -72,6 +72,9 @@ BOARD_HAVE_NFC := true
 # Use libril in the device tree
 BOARD_PROVIDES_LIBRIL := true
 
+# USB mass storage
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
+
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
